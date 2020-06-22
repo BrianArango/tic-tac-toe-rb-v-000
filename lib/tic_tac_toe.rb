@@ -9,6 +9,7 @@ WIN_COMBINATIONS = [
   [6, 4, 2]
 ]
 
+#board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -20,6 +21,28 @@ end
 def input_to_index(user_input)
   user_input.to_i - 1
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=begin 
+
 
 def move(board, index, current_player)
   board[index] = current_player
@@ -106,8 +129,7 @@ def over?(board)
   end
 end
 
-def winner (board)
-  index = []
+def winner(board)
   index = won?(board)
   if index == false
     return nil
@@ -131,3 +153,4 @@ def play(board)
     puts "Cat's Game!"
   end
 end
+=end
